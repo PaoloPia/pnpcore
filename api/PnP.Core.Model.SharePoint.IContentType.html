@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IContentType
    | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,19 +37,19 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="PnP.Core.Model.SharePoint.IContentType">
-  <h1 id="PnP_Core_Model_SharePoint_IContentType" data-uid="PnP.Core.Model.SharePoint.IContentType">Interface IContentType
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L6" title="View Source" class="view-source-lg"><i class="fa fa-code"></i></a>
+                      <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                      <h1 id="PnP_Core_Model_SharePoint_IContentType" data-uid="PnP.Core.Model.SharePoint.IContentType">Interface IContentType
   </h1>
   <div class="markdown level0 summary"><p>Public interface to define a Content Type object of SharePoint Online</p>
 </div>
@@ -89,15 +93,6 @@
   
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_GetAsync_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModel&lt;IContentType&gt;.GetAsync(Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
-    </div>
-    <div>
-      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_Get_PnP_Core_Services_Batch_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModel&lt;IContentType&gt;.Get(Batch, Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
-    </div>
-    <div>
-      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_Get_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModel&lt;IContentType&gt;.Get(Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
-    </div>
     <div>
       <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_HasValue_System_String_">IDataModel&lt;IContentType&gt;.HasValue(String)</a>
     </div>
@@ -114,37 +109,88 @@
       <a class="xref" href="PnP.Core.Model.IDataModelWithContext.html#PnP_Core_Model_IDataModelWithContext_PnPContext">IDataModelWithContext.PnPContext</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_PnP_Core_Services_ApiResponse_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetAsync(ApiResponse, Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatchAsync_PnP_Core_Services_Batch_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetBatchAsync(Batch, Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_PnP_Core_Services_Batch_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.Get(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatchAsync_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetBatchAsync(Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.Get(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatch_PnP_Core_Services_Batch_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetBatch(Batch, Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatch_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetBatch(Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_PnP_Core_Services_ApiResponse_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetAsync(Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_Update">IDataModelUpdate.Update()</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_PnP_Core_Services_ApiResponse_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.GetAsync(ApiResponse, Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_Update_PnP_Core_Services_Batch_">IDataModelUpdate.Update(Batch)</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_Get_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.Get(Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_Get_PnP_Core_Services_ApiResponse_Expression_Func__0_System_Object_____">IDataModelGet&lt;IContentType&gt;.Get(ApiResponse, Expression&lt;Func&lt;IContentType, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatchAsync_PnP_Core_Services_Batch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatchAsync(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatchAsync_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatchAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatch_PnP_Core_Services_Batch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatch(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatch(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_PnP_Core_Services_ApiResponse_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_Expression_Func_System_Object_System_Object_____">IDataModelGet.Get(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_PnP_Core_Services_ApiResponse_Expression_Func_System_Object_System_Object_____">IDataModelGet.Get(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatchAsync">IDataModelUpdate.UpdateBatchAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatchAsync_PnP_Core_Services_Batch_">IDataModelUpdate.UpdateBatchAsync(Batch)</a>
     </div>
     <div>
       <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateAsync">IDataModelUpdate.UpdateAsync()</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_Delete">IDataModelDelete.Delete()</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatch">IDataModelUpdate.UpdateBatch()</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_Delete_PnP_Core_Services_Batch_">IDataModelDelete.Delete(Batch)</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatch_PnP_Core_Services_Batch_">IDataModelUpdate.UpdateBatch(Batch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_Update">IDataModelUpdate.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatchAsync">IDataModelDelete.DeleteBatchAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatchAsync_PnP_Core_Services_Batch_">IDataModelDelete.DeleteBatchAsync(Batch)</a>
     </div>
     <div>
       <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteAsync">IDataModelDelete.DeleteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatch">IDataModelDelete.DeleteBatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatch_PnP_Core_Services_Batch_">IDataModelDelete.DeleteBatch(Batch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_Delete">IDataModelDelete.Delete()</a>
     </div>
   </div>
   
@@ -153,7 +199,7 @@
   
   <h5 id="PnP_Core_Model_SharePoint_IContentType_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IContentType : IDataModel&lt;IContentType&gt;, IDataModelParent, IDataModelWithContext, IDataModelGet&lt;IContentType&gt;, IDataModelGet, IDataModelUpdate, IDataModelDelete</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IContentType : IDataModel&lt;IContentType&gt;, IDataModelParent, IDataModelWithContext, IDataModelGet&lt;IContentType&gt;, IDataModelGet, IDataModelUpdate, IDataModelDelete, IQueryableDataModel</code></pre>
   </div>
 
   
@@ -165,10 +211,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_ClientFormCustomFormatter.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.ClientFormCustomFormatter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_ClientFormCustomFormatter.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.ClientFormCustomFormatter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L22" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L22" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_ClientFormCustomFormatter_" data-uid="PnP.Core.Model.SharePoint.IContentType.ClientFormCustomFormatter*"></a>
@@ -209,10 +255,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Description.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Description.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Description_" data-uid="PnP.Core.Model.SharePoint.IContentType.Description*"></a>
@@ -253,10 +299,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DisplayFormTemplateName.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DisplayFormTemplateName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DisplayFormTemplateName.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DisplayFormTemplateName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_DisplayFormTemplateName_" data-uid="PnP.Core.Model.SharePoint.IContentType.DisplayFormTemplateName*"></a>
@@ -297,10 +343,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DisplayFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DisplayFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DisplayFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DisplayFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_DisplayFormUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.DisplayFormUrl*"></a>
@@ -341,10 +387,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DocumentTemplate.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DocumentTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DocumentTemplate.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DocumentTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L42" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L42" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_DocumentTemplate_" data-uid="PnP.Core.Model.SharePoint.IContentType.DocumentTemplate*"></a>
@@ -385,10 +431,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DocumentTemplateUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DocumentTemplateUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_DocumentTemplateUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.DocumentTemplateUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_DocumentTemplateUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.DocumentTemplateUrl*"></a>
@@ -429,10 +475,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_EditFormTemplateName.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.EditFormTemplateName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_EditFormTemplateName.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.EditFormTemplateName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L52" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L52" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_EditFormTemplateName_" data-uid="PnP.Core.Model.SharePoint.IContentType.EditFormTemplateName*"></a>
@@ -473,10 +519,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_EditFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.EditFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_EditFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.EditFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L57" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L57" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_EditFormUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.EditFormUrl*"></a>
@@ -517,10 +563,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_FieldLinks.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.FieldLinks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_FieldLinks.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.FieldLinks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L138" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L140" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_FieldLinks_" data-uid="PnP.Core.Model.SharePoint.IContentType.FieldLinks*"></a>
@@ -561,10 +607,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Group.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Group%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Group.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Group%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L62" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L62" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Group_" data-uid="PnP.Core.Model.SharePoint.IContentType.Group*"></a>
@@ -605,10 +651,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Hidden.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Hidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Hidden.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Hidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L67" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L67" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Hidden_" data-uid="PnP.Core.Model.SharePoint.IContentType.Hidden*"></a>
@@ -649,10 +695,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Id.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Id.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Id_" data-uid="PnP.Core.Model.SharePoint.IContentType.Id*"></a>
@@ -693,10 +739,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_JSLink.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.JSLink%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_JSLink.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.JSLink%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L72" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L72" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_JSLink_" data-uid="PnP.Core.Model.SharePoint.IContentType.JSLink*"></a>
@@ -737,10 +783,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_MobileDisplayFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.MobileDisplayFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_MobileDisplayFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.MobileDisplayFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L77" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L77" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_MobileDisplayFormUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.MobileDisplayFormUrl*"></a>
@@ -781,10 +827,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_MobileEditFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.MobileEditFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_MobileEditFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.MobileEditFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L82" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L82" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_MobileEditFormUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.MobileEditFormUrl*"></a>
@@ -825,10 +871,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_MobileNewFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.MobileNewFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_MobileNewFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.MobileNewFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L87" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L87" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_MobileNewFormUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.MobileNewFormUrl*"></a>
@@ -869,10 +915,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Name.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Name.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L92" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L92" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Name_" data-uid="PnP.Core.Model.SharePoint.IContentType.Name*"></a>
@@ -913,10 +959,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_NewFormTemplateName.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.NewFormTemplateName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_NewFormTemplateName.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.NewFormTemplateName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L97" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L97" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_NewFormTemplateName_" data-uid="PnP.Core.Model.SharePoint.IContentType.NewFormTemplateName*"></a>
@@ -957,10 +1003,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_NewFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.NewFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_NewFormUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.NewFormUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L102" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L102" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_NewFormUrl_" data-uid="PnP.Core.Model.SharePoint.IContentType.NewFormUrl*"></a>
@@ -1001,10 +1047,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_ReadOnly.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.ReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_ReadOnly.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.ReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L107" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L108" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_ReadOnly_" data-uid="PnP.Core.Model.SharePoint.IContentType.ReadOnly*"></a>
@@ -1045,10 +1091,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_SchemaXml.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.SchemaXml%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_SchemaXml.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.SchemaXml%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L112" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L114" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_SchemaXml_" data-uid="PnP.Core.Model.SharePoint.IContentType.SchemaXml*"></a>
@@ -1089,10 +1135,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_SchemaXmlWithResourceTokens.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.SchemaXmlWithResourceTokens%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_SchemaXmlWithResourceTokens.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.SchemaXmlWithResourceTokens%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L117" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L119" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_SchemaXmlWithResourceTokens_" data-uid="PnP.Core.Model.SharePoint.IContentType.SchemaXmlWithResourceTokens*"></a>
@@ -1133,10 +1179,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Scope.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Scope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Scope.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Scope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L122" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L124" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Scope_" data-uid="PnP.Core.Model.SharePoint.IContentType.Scope*"></a>
@@ -1177,10 +1223,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Sealed.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Sealed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_Sealed.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.Sealed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L127" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L129" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_Sealed_" data-uid="PnP.Core.Model.SharePoint.IContentType.Sealed*"></a>
@@ -1221,10 +1267,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_StringId.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.StringId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType_StringId.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType.StringId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L12" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L12" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_SharePoint_IContentType_StringId_" data-uid="PnP.Core.Model.SharePoint.IContentType.StringId*"></a>
@@ -1265,25 +1311,20 @@
   
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_EnsurePropertiesAsync__1_PnP_Core_Model_IDataModel___0__System_Linq_Expressions_Expression_System_Func___0_System_Object_____">DataModelExtensions.EnsurePropertiesAsync&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_EnsurePropertiesAsync__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object_____">DataModelExtensions.EnsurePropertiesAsync&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
   </div>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_ArePropertiesAvailable__1_PnP_Core_Model_IDataModel___0__System_Linq_Expressions_Expression_System_Func___0_System_Object_____">DataModelExtensions.ArePropertiesAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_ArePropertiesAvailable__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object_____">DataModelExtensions.ArePropertiesAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
   </div>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1_PnP_Core_Model_IDataModel___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
   </div>
   
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IContentType.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-              <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IContentType.cs/#L6" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -1299,15 +1340,14 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
 </html>

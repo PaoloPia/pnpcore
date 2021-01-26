@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -8,19 +8,19 @@
     <title>Writing test cases | PnP Core SDK </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Writing test cases | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -35,19 +35,19 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -77,7 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="writing-test-cases">Writing test cases</h1>
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/docs/articles/contributor/writing tests.md/#L1" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                    <h1 id="writing-test-cases">Writing test cases</h1>
 
 <p>Test cases are a crucial part of the PnP Core SDK as they help ensuring code quality and provide feedback to contributors on how well their changes are working. All new contributions <strong>must</strong> be covered by test cases unless the added functionality is already somehow covered by existing test cases.</p>
 <h2 id="setting-up-your-environment-to-run-the-tests-cases">Setting up your environment to run the tests cases</h2>
@@ -135,7 +138,7 @@ public class GetTests
     public async Task GetSinglePropertyViaRest()
     {
         //TestCommon.Instance.Mocking = false;
-        using (var context = TestCommon.Instance.GetContext(TestCommon.TestSite))
+        using (var context = await TestCommon.Instance.GetContextAsync(TestCommon.TestSite))
         {
             var web = await context.Web.GetAsync(p =&gt; p.WelcomePage);
 
@@ -166,9 +169,15 @@ public class GetTests
     public async Task NameOfYourTestMethod()
     {
         TestCommon.Instance.Mocking = false;
-        using (var context = TestCommon.Instance.GetContext(TestCommon.TestSite))
+        using (var context = await TestCommon.Instance.GetContextAsync(TestCommon.TestSite))
         {
             // here comes your actual test code
+
+            using (var context1 = await TestCommon.Instance.GetContextAsync(TestCommon.TestSite, 1))
+            {
+                // here comes your actual test code, eg code that validates what was created in the first part
+            }
+
         }
     }
 </code></pre>
@@ -181,11 +190,15 @@ public class GetTests
 </ol>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Each checked in test must be checked in with mocking turned on and as such with the appropriate offline test files (the <code>.response</code> files). This is important as it ensures that test cases execute really fast and that tests can be used in build/deploy pipelines.</p>
+<ul>
+<li>Each checked in test must be checked in with mocking turned on and as such with the appropriate offline test files (the <code>.response</code> files). This is important as it ensures that test cases execute really fast and that tests can be used in build/deploy pipelines.</li>
+<li>When you use <code>GetContextAsync</code> multiple times in a single test case then use a sequence number for all but the first usage. The second usage would be like this: <code>await TestCommon.Instance.GetContextAsync(TestCommon.TestSite, 1)</code>, the third usage <code>await TestCommon.Instance.GetContextAsync(TestCommon.TestSite, 2)</code>.</li>
+</ul>
 </div>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <h3 id="do-i-need-to-recreate-the-sites-after-each-live-test-run">Do I need to recreate the sites after each live test run?</h3>
-<p>You can opt to recreate the sites each time, but that will be time consuming. It's better to clean the created artifacts before launching a new live test run. The artifacts to clean obviously depend on the written test cases and it's a best practice to keep the <code>cleantestenv.copyme.ps1</code> script up to date with the needed cleaning work. You can tailor this script for your environment and save it as <code>cleantestenv.xxx.ps1</code> (xxx identifies your test environment) to add your specific cleanup instructions.</p>
+<p>You can opt to recreate the sites each time, but that will be time consuming. It's better to clean the created artifacts before launching a new live test run. The artifacts to clean obviously depend on the written test cases and it's a best practice to keep the <code>cleantestenv.copyme.ps1</code> script up to date with the needed cleaning work. You can tailor this script for your environment and save it as <code>cleantestenv.xxx.ps1</code> (xxx identifies your test environment) to add your specific cleanup instructions.
+In addition, we strongly recommend you to prefix the name of any asset or artifact created in the tests with the constant <code>TestCommon.PnPCoreSDKTestPrefix</code>. This will help identifying the assets and ease up the cleaning process. Alternatively, you can use the helper method <code>TestCommon.GetPnPSdkTestAssetName(string name)</code> to ensure any name you choose is always prefixed following our convention.</p>
 <h3 id="how-can-i-configure-tests-to-run-live-versus-the-default-offline-run">How can I configure tests to run live versus the default offline run?</h3>
 <p>By default all the tests run based upon offline data, this is done to enable fast test execution without being dependent on a Microsoft 365 backend to be available and configured for testing. If you however are adding new test cases or refactoring code you might want to run one or more tests in live mode. There are 3 options:</p>
 <h4 id="run-a-single-test-live">Run a single test live</h4>
@@ -194,7 +207,7 @@ public class GetTests
 public async Task GetSinglePropertyViaRest()
 {
     TestCommon.Instance.Mocking = false;
-    using (var context = TestCommon.Instance.GetContext(TestCommon.TestSite))
+    using (var context = await TestCommon.Instance.GetContextAsync(TestCommon.TestSite))
     {
         var web = await context.Web.GetAsync(p =&gt; p.WelcomePage);
 
@@ -234,16 +247,15 @@ public static void TestFixtureSetup(TestContext context)
 </div>
 <h3 id="can-i-rename-test-files-or-test-cases">Can I rename test files or test cases</h3>
 <p>Yes, if naming needs to change you can do that. Keep in mind that the offline files live in a folder named accordingly to the test file and the offline files depend on the test case name, so you'll have to do similar renames in offline files or folder.</p>
-<h3 id="my-test-cannot-in-offline-mode-and-as-such-it-breaks-the-github-build-and-test-workflow">My test cannot in offline mode and as such it breaks the GitHub &quot;Build and Test&quot; workflow</h3>
+<h3 id="my-test-cannot-run-in-offline-mode-and-as-such-it-breaks-the-github-build-and-test-workflow">My test cannot run in offline mode and as such it breaks the GitHub &quot;Build and Test&quot; workflow</h3>
 <p>If you really can't make your test work offline then you'll need to exclude the test from being executed in the GitHub <strong>Build and Test</strong> workflow. This can be done by adding the following check to your test case:</p>
 <pre><code class="lang-csharp">if (TestCommon.RunningInGitHubWorkflow()) Assert.Inconclusive(&quot;Skipping live test because we're running inside a GitHub action&quot;);
 </code></pre>
+<h3 id="my-tests-for-terms-fail-when-running-in-live-mode">My tests for Terms fail when running in Live Mode</h3>
+<p>Please add &quot;Dutch&quot; to language support for terms, this is only required for live running for term set tests only, this will take a few minutes before it is effective in the Microsoft Graph.
+If this persists, the test uses a Sleep (of 10 seconds) method to &quot;wait&quot; for the removal of test artefacts, sometimes the artefacts are not removed within this time, this will show the test to fail.</p>
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/pnp/pnpcore/blob/dev/docs/articles/contributor/writing tests.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -259,15 +271,14 @@ public static void TestFixtureSetup(TestContext context)
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../../styles/main.js"></script>  </body>
 </html>

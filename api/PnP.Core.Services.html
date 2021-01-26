@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace PnP.Core.Services
    | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,19 +37,19 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="PnP.Core.Services">
-  <h1 id="PnP_Core_Services" data-uid="PnP.Core.Services">Namespace PnP.Core.Services
+                  <div class="contribution-panel mobile-hide pull-right">
+                  </div>
+                      <h1 id="PnP_Core_Services" data-uid="PnP.Core.Services">Namespace PnP.Core.Services
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -87,20 +89,6 @@
     <h3 id="classes">Classes
   </h3>
     <table>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.AuthenticationProviderFactory.html">AuthenticationProviderFactory</a></p>
-          <p><p>Public factory service to create IAuthenticationProvider object instances</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.AuthenticationProviderFactoryCollectionExtensions.html">AuthenticationProviderFactoryCollectionExtensions</a></p>
-          <p><p>Extension class for the IServiceCollection type to provide supporting methods for the AuthenticationProviderFactory service</p>
-</p>
-        </td>
-      </tr>
       <tr>
         <td>
           <p><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></p>
@@ -119,54 +107,6 @@
         <td>
           <p><a class="xref" href="PnP.Core.Services.MicrosoftGraphClient.html">MicrosoftGraphClient</a></p>
           <p><p>Client that handles all Microsoft Graph requests</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthAccessTokenConfiguration.html">OAuthAccessTokenConfiguration</a></p>
-          <p><p>Configuration for using an existing access token</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthAuthenticationProvider.html">OAuthAuthenticationProvider</a></p>
-          <p><p>OAuth authentication provider, uses Azure AD to authenticate requests and provide access tokens</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthAuthenticationProviderCollectionExtensions.html">OAuthAuthenticationProviderCollectionExtensions</a></p>
-          <p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthAuthenticationProviderOptions.html">OAuthAuthenticationProviderOptions</a></p>
-          <p><p>Defines a collection of credential settings for secure connections to the target resources</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthCertificateConfiguration.html">OAuthCertificateConfiguration</a></p>
-          <p><p>Public type to define the Authentication based on X.509 Certificate</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthCredentialManagerConfiguration.html">OAuthCredentialManagerConfiguration</a></p>
-          <p><p>Public type to define the Authentication based on Credential Manager</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.OAuthUsernamePasswordConfiguration.html">OAuthUsernamePasswordConfiguration</a></p>
-          <p><p>Public type to define the Authentication with Username and Password</p>
 </p>
         </td>
       </tr>
@@ -207,15 +147,8 @@
       </tr>
       <tr>
         <td>
-          <p><a class="xref" href="PnP.Core.Services.Settings.html">Settings</a></p>
+          <p><a class="xref" href="PnP.Core.Services.PnPGlobalSettingsOptions.html">PnPGlobalSettingsOptions</a></p>
           <p><p>PnP Core SDK settings class</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.SettingsCollectionExtensions.html">SettingsCollectionExtensions</a></p>
-          <p><p>Add <a class="xref" href="PnP.Core.Services.ISettings.html">ISettings</a> to the dependency injection container</p>
 </p>
         </td>
       </tr>
@@ -250,45 +183,14 @@
       </tr>
       <tr>
         <td>
-          <p><a class="xref" href="PnP.Core.Services.IAuthenticationProviderConfiguration.html">IAuthenticationProviderConfiguration</a></p>
-          <p><p>Basic interface for all the Authentication Provider configurations</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.IAuthenticationProviderFactory.html">IAuthenticationProviderFactory</a></p>
-          <p><p>Public interface for the injectable service to create instances of the interface IAuthenticationProvider</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.IOAuthAccessTokenProvider.html">IOAuthAccessTokenProvider</a></p>
-          <p><p>OAuth access token provider</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
           <p><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html">IPnPContextFactory</a></p>
           <p><p>Public interface for the injectable service to create an PnPContext</p>
-</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a class="xref" href="PnP.Core.Services.ISettings.html">ISettings</a></p>
-          <p><p>PnP Core SDK settings</p>
 </p>
         </td>
       </tr>
     </table>
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -304,15 +206,14 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
 </html>

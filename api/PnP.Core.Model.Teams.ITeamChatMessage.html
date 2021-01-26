@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface ITeamChatMessage
    | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,19 +37,19 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="PnP.Core.Model.Teams.ITeamChatMessage">
-  <h1 id="PnP_Core_Model_Teams_ITeamChatMessage" data-uid="PnP.Core.Model.Teams.ITeamChatMessage">Interface ITeamChatMessage
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L10" title="View Source" class="view-source-lg"><i class="fa fa-code"></i></a>
+                      <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                      <h1 id="PnP_Core_Model_Teams_ITeamChatMessage" data-uid="PnP.Core.Model.Teams.ITeamChatMessage">Interface ITeamChatMessage
   </h1>
   <div class="markdown level0 summary"><p>Represents an individual chat message within a channel or chat. The chat message can be a root chat message or
 part of a reply thread that is defined by the replyToId property in the chat message.</p>
@@ -90,15 +94,6 @@ part of a reply thread that is defined by the replyToId property in the chat mes
   
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_GetAsync_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModel&lt;ITeamChatMessage&gt;.GetAsync(Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
-    </div>
-    <div>
-      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_Get_PnP_Core_Services_Batch_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModel&lt;ITeamChatMessage&gt;.Get(Batch, Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
-    </div>
-    <div>
-      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_Get_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModel&lt;ITeamChatMessage&gt;.Get(Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
-    </div>
     <div>
       <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_HasValue_System_String_">IDataModel&lt;ITeamChatMessage&gt;.HasValue(String)</a>
     </div>
@@ -115,19 +110,52 @@ part of a reply thread that is defined by the replyToId property in the chat mes
       <a class="xref" href="PnP.Core.Model.IDataModelWithContext.html#PnP_Core_Model_IDataModelWithContext_PnPContext">IDataModelWithContext.PnPContext</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_PnP_Core_Services_ApiResponse_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetAsync(ApiResponse, Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatchAsync_PnP_Core_Services_Batch_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetBatchAsync(Batch, Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_PnP_Core_Services_Batch_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.Get(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatchAsync_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetBatchAsync(Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.Get(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatch_PnP_Core_Services_Batch_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetBatch(Batch, Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatch_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetBatch(Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_PnP_Core_Services_ApiResponse_System_Linq_Expressions_Expression_System_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetAsync(Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_PnP_Core_Services_ApiResponse_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.GetAsync(ApiResponse, Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_Get_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.Get(Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_Get_PnP_Core_Services_ApiResponse_Expression_Func__0_System_Object_____">IDataModelGet&lt;ITeamChatMessage&gt;.Get(ApiResponse, Expression&lt;Func&lt;ITeamChatMessage, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatchAsync_PnP_Core_Services_Batch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatchAsync(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatchAsync_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatchAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatch_PnP_Core_Services_Batch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatch(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatch(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_PnP_Core_Services_ApiResponse_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_Expression_Func_System_Object_System_Object_____">IDataModelGet.Get(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_PnP_Core_Services_ApiResponse_Expression_Func_System_Object_System_Object_____">IDataModelGet.Get(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
     </div>
   </div>
   
@@ -136,7 +164,7 @@ part of a reply thread that is defined by the replyToId property in the chat mes
   
   <h5 id="PnP_Core_Model_Teams_ITeamChatMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ITeamChatMessage : IDataModel&lt;ITeamChatMessage&gt;, IDataModelParent, IDataModelWithContext, IDataModelGet&lt;ITeamChatMessage&gt;, IDataModelGet</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITeamChatMessage : IDataModel&lt;ITeamChatMessage&gt;, IDataModelParent, IDataModelWithContext, IDataModelGet&lt;ITeamChatMessage&gt;, IDataModelGet, IQueryableDataModel</code></pre>
   </div>
 
   
@@ -148,10 +176,10 @@ part of a reply thread that is defined by the replyToId property in the chat mes
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Attachments.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Attachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Attachments.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Attachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L99" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L99" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Attachments_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Attachments*"></a>
@@ -176,7 +204,7 @@ part of a reply thread that is defined by the replyToId property in the chat mes
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChatMessageAttachment.html">ITeamChatMessageAttachment</a>&gt;
+        <span class="xref">List</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChatMessageAttachment.html">ITeamChatMessageAttachment</a>&gt;
         <p>
       </td>
     </tr>
@@ -192,10 +220,10 @@ part of a reply thread that is defined by the replyToId property in the chat mes
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Body.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Body%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Body.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Body%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L63" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L63" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Body_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Body*"></a>
@@ -237,10 +265,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_CreatedDateTime.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_CreatedDateTime.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L42" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L42" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_CreatedDateTime_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.CreatedDateTime*"></a>
@@ -265,7 +293,7 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>
+        <span class="xref">DateTimeOffset</span>
         <p>
       </td>
     </tr>
@@ -281,10 +309,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_DeletedDateTime.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.DeletedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_DeletedDateTime.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.DeletedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L52" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L52" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_DeletedDateTime_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.DeletedDateTime*"></a>
@@ -309,7 +337,7 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>
+        <span class="xref">DateTimeOffset</span>
         <p>
       </td>
     </tr>
@@ -325,10 +353,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Etag.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Etag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Etag.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Etag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Etag_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Etag*"></a>
@@ -369,10 +397,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_From.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.From%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_From.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.From%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_From_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.From*"></a>
@@ -413,10 +441,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Id.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Id.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Id_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Id*"></a>
@@ -457,10 +485,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Importance.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Importance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Importance.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Importance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L74" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L74" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Importance_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Importance*"></a>
@@ -501,10 +529,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_LastModifiedDateTime.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.LastModifiedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_LastModifiedDateTime.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.LastModifiedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_LastModifiedDateTime_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.LastModifiedDateTime*"></a>
@@ -529,7 +557,7 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>
+        <span class="xref">DateTimeOffset</span>
         <p>
       </td>
     </tr>
@@ -545,10 +573,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Locale.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Locale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Locale.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Locale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L84" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L84" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Locale_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Locale*"></a>
@@ -589,10 +617,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Mentions.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Mentions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Mentions.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Mentions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L94" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L94" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Mentions_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Mentions*"></a>
@@ -617,7 +645,7 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChatMessageMention.html">ITeamChatMessageMention</a>&gt;
+        <span class="xref">List</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChatMessageMention.html">ITeamChatMessageMention</a>&gt;
         <p>
       </td>
     </tr>
@@ -633,10 +661,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_MessageType.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.MessageType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_MessageType.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.MessageType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_MessageType_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.MessageType*"></a>
@@ -677,10 +705,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Reactions.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Reactions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Reactions.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Reactions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L89" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L89" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Reactions_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Reactions*"></a>
@@ -705,7 +733,7 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChatMessageReaction.html">ITeamChatMessageReaction</a>&gt;
+        <span class="xref">List</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChatMessageReaction.html">ITeamChatMessageReaction</a>&gt;
         <p>
       </td>
     </tr>
@@ -721,10 +749,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_ReplyToId.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.ReplyToId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_ReplyToId.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.ReplyToId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L22" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L22" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_ReplyToId_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.ReplyToId*"></a>
@@ -765,10 +793,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Subject.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Subject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Subject.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Subject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L57" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L57" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Subject_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Subject*"></a>
@@ -809,10 +837,10 @@ The content is always in HTML if the chat message contains a chatMessageMention.
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Summary.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Summary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_Summary.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.Summary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L69" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L69" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_Summary_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.Summary*"></a>
@@ -854,10 +882,10 @@ Only applies to channel chat messages, not chat messages in a chat.</p>
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_WebUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.WebUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage_WebUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage.WebUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L79" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L79" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChatMessage_WebUrl_" data-uid="PnP.Core.Model.Teams.ITeamChatMessage.WebUrl*"></a>
@@ -882,7 +910,7 @@ Only applies to channel chat messages, not chat messages in a chat.</p>
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a>
+        <span class="xref">Uri</span>
         <p>
       </td>
     </tr>
@@ -898,25 +926,20 @@ Only applies to channel chat messages, not chat messages in a chat.</p>
   
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_EnsurePropertiesAsync__1_PnP_Core_Model_IDataModel___0__System_Linq_Expressions_Expression_System_Func___0_System_Object_____">DataModelExtensions.EnsurePropertiesAsync&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_EnsurePropertiesAsync__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object_____">DataModelExtensions.EnsurePropertiesAsync&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
   </div>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_ArePropertiesAvailable__1_PnP_Core_Model_IDataModel___0__System_Linq_Expressions_Expression_System_Func___0_System_Object_____">DataModelExtensions.ArePropertiesAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_ArePropertiesAvailable__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object_____">DataModelExtensions.ArePropertiesAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
   </div>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1_PnP_Core_Model_IDataModel___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
   </div>
   
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChatMessage.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChatMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-              <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChatMessage.cs/#L10" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -932,15 +955,14 @@ Only applies to channel chat messages, not chat messages in a chat.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
 </html>

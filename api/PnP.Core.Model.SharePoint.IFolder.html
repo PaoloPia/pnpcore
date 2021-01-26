@@ -1,0 +1,2045 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFolder
+   | PnP Core SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFolder
+   | PnP Core SDK ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PnP.Core.Model.SharePoint.IFolder">
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L10" title="View Source" class="view-source-lg"><i class="fa fa-code"></i></a>
+                      <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                      <h1 id="PnP_Core_Model_SharePoint_IFolder" data-uid="PnP.Core.Model.SharePoint.IFolder">Interface IFolder
+  </h1>
+  <div class="markdown level0 summary"><p>Public interface to define a Folder object</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_HasValue_System_String_">IDataModel&lt;IFolder&gt;.HasValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_HasChanged_System_String_">IDataModel&lt;IFolder&gt;.HasChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModel-1.html#PnP_Core_Model_IDataModel_1_Requested">IDataModel&lt;IFolder&gt;.Requested</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelParent.html#PnP_Core_Model_IDataModelParent_Parent">IDataModelParent.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelWithContext.html#PnP_Core_Model_IDataModelWithContext_PnPContext">IDataModelWithContext.PnPContext</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatchAsync_PnP_Core_Services_Batch_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.GetBatchAsync(Batch, Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatchAsync_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.GetBatchAsync(Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatch_PnP_Core_Services_Batch_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.GetBatch(Batch, Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetBatch_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.GetBatch(Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.GetAsync(Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_GetAsync_PnP_Core_Services_ApiResponse_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.GetAsync(ApiResponse, Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_Get_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.Get(Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet-1.html#PnP_Core_Model_IDataModelGet_1_Get_PnP_Core_Services_ApiResponse_Expression_Func__0_System_Object_____">IDataModelGet&lt;IFolder&gt;.Get(ApiResponse, Expression&lt;Func&lt;IFolder, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatchAsync_PnP_Core_Services_Batch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatchAsync(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatchAsync_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatchAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatch_PnP_Core_Services_Batch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatch(Batch, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetBatch_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetBatch(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_GetAsync_PnP_Core_Services_ApiResponse_Expression_Func_System_Object_System_Object_____">IDataModelGet.GetAsync(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_Expression_Func_System_Object_System_Object_____">IDataModelGet.Get(Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelGet.html#PnP_Core_Model_IDataModelGet_Get_PnP_Core_Services_ApiResponse_Expression_Func_System_Object_System_Object_____">IDataModelGet.Get(ApiResponse, Expression&lt;Func&lt;Object, Object&gt;&gt;[])</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatchAsync">IDataModelUpdate.UpdateBatchAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatchAsync_PnP_Core_Services_Batch_">IDataModelUpdate.UpdateBatchAsync(Batch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateAsync">IDataModelUpdate.UpdateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatch">IDataModelUpdate.UpdateBatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_UpdateBatch_PnP_Core_Services_Batch_">IDataModelUpdate.UpdateBatch(Batch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelUpdate.html#PnP_Core_Model_IDataModelUpdate_Update">IDataModelUpdate.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatchAsync">IDataModelDelete.DeleteBatchAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatchAsync_PnP_Core_Services_Batch_">IDataModelDelete.DeleteBatchAsync(Batch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteAsync">IDataModelDelete.DeleteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatch">IDataModelDelete.DeleteBatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_DeleteBatch_PnP_Core_Services_Batch_">IDataModelDelete.DeleteBatch(Batch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PnP.Core.Model.IDataModelDelete.html#PnP_Core_Model_IDataModelDelete_Delete">IDataModelDelete.Delete()</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="PnP.Core.Model.SharePoint.html">PnP.Core.Model.SharePoint</a></h6>
+  <h6><strong>Assembly</strong>: PnP.Core.dll</h6>
+  
+  <h5 id="PnP_Core_Model_SharePoint_IFolder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFolder : IDataModel&lt;IFolder&gt;, IDataModelParent, IDataModelWithContext, IDataModelGet&lt;IFolder&gt;, IDataModelGet, IDataModelUpdate, IDataModelDelete, IQueryableDataModel</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_Exists.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.Exists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L16" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_Exists_" data-uid="PnP.Core.Model.SharePoint.IFolder.Exists*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_Exists" data-uid="PnP.Core.Model.SharePoint.IFolder.Exists"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_Exists" class="expander" data-toggle="collapse">Exists</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_Exists" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets whether the folder exists,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Exists { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_Files.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.Files%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L91" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_Files_" data-uid="PnP.Core.Model.SharePoint.IFolder.Files*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_Files" data-uid="PnP.Core.Model.SharePoint.IFolder.Files"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_Files" class="expander" data-toggle="collapse">Files</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_Files" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the collection of files contained in the folder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFileCollection Files { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IFileCollection.html">IFileCollection</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_Folders.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.Folders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L86" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_Folders_" data-uid="PnP.Core.Model.SharePoint.IFolder.Folders*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_Folders" data-uid="PnP.Core.Model.SharePoint.IFolder.Folders"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_Folders" class="expander" data-toggle="collapse">Folders</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_Folders" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the collection of list folders contained in the list folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFolderCollection Folders { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IFolderCollection.html">IFolderCollection</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_IsWOPIEnabled.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.IsWOPIEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L21" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_IsWOPIEnabled_" data-uid="PnP.Core.Model.SharePoint.IFolder.IsWOPIEnabled*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_IsWOPIEnabled" data-uid="PnP.Core.Model.SharePoint.IFolder.IsWOPIEnabled"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_IsWOPIEnabled" class="expander" data-toggle="collapse">IsWOPIEnabled</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_IsWOPIEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets whether is WOPI enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsWOPIEnabled { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_ItemCount.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.ItemCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L26" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_ItemCount_" data-uid="PnP.Core.Model.SharePoint.IFolder.ItemCount*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_ItemCount" data-uid="PnP.Core.Model.SharePoint.IFolder.ItemCount"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_ItemCount" class="expander" data-toggle="collapse">ItemCount</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_ItemCount" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value that specifies the count of items in the list folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ItemCount { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_ListItemAllFields.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.ListItemAllFields%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L66" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_ListItemAllFields_" data-uid="PnP.Core.Model.SharePoint.IFolder.ListItemAllFields*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_ListItemAllFields" data-uid="PnP.Core.Model.SharePoint.IFolder.ListItemAllFields"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_ListItemAllFields" class="expander" data-toggle="collapse">ListItemAllFields</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_ListItemAllFields" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the list item field values for the list item corresponding to the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IListItem ListItemAllFields { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IListItem.html">IListItem</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_Name.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L31" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_Name_" data-uid="PnP.Core.Model.SharePoint.IFolder.Name*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_Name" data-uid="PnP.Core.Model.SharePoint.IFolder.Name"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_Name" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the name of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_ParentFolder.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.ParentFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L71" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_ParentFolder_" data-uid="PnP.Core.Model.SharePoint.IFolder.ParentFolder*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_ParentFolder" data-uid="PnP.Core.Model.SharePoint.IFolder.ParentFolder"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_ParentFolder" class="expander" data-toggle="collapse">ParentFolder</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_ParentFolder" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the parent list folder of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFolder ParentFolder { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_ProgID.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.ProgID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_ProgID_" data-uid="PnP.Core.Model.SharePoint.IFolder.ProgID*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_ProgID" data-uid="PnP.Core.Model.SharePoint.IFolder.ProgID"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_ProgID" class="expander" data-toggle="collapse">ProgID</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_ProgID" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the ProdId of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ProgID { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_Properties.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L76" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_Properties_" data-uid="PnP.Core.Model.SharePoint.IFolder.Properties*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_Properties" data-uid="PnP.Core.Model.SharePoint.IFolder.Properties"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_Properties" class="expander" data-toggle="collapse">Properties</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_Properties" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the collection of all files contained in the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPropertyValues Properties { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IPropertyValues.html">IPropertyValues</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_ServerRelativeUrl.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.ServerRelativeUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L41" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_ServerRelativeUrl_" data-uid="PnP.Core.Model.SharePoint.IFolder.ServerRelativeUrl*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_ServerRelativeUrl" data-uid="PnP.Core.Model.SharePoint.IFolder.ServerRelativeUrl"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_ServerRelativeUrl" class="expander" data-toggle="collapse">ServerRelativeUrl</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_ServerRelativeUrl" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the server-relative URL of the list folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ServerRelativeUrl { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_StorageMetrics.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.StorageMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L81" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_StorageMetrics_" data-uid="PnP.Core.Model.SharePoint.IFolder.StorageMetrics*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_StorageMetrics" data-uid="PnP.Core.Model.SharePoint.IFolder.StorageMetrics"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_StorageMetrics" class="expander" data-toggle="collapse">StorageMetrics</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_StorageMetrics" class="collapse in">
+  <div class="markdown level1 summary"><p>Get the storage metrics of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IStorageMetrics StorageMetrics { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IStorageMetrics.html">IStorageMetrics</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_TimeCreated.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.TimeCreated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L46" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_TimeCreated_" data-uid="PnP.Core.Model.SharePoint.IFolder.TimeCreated*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_TimeCreated" data-uid="PnP.Core.Model.SharePoint.IFolder.TimeCreated"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_TimeCreated" class="expander" data-toggle="collapse">TimeCreated</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_TimeCreated" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the creation time of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime TimeCreated { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_TimeLastModified.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.TimeLastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L51" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_TimeLastModified_" data-uid="PnP.Core.Model.SharePoint.IFolder.TimeLastModified*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_TimeLastModified" data-uid="PnP.Core.Model.SharePoint.IFolder.TimeLastModified"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_TimeLastModified" class="expander" data-toggle="collapse">TimeLastModified</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_TimeLastModified" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the last modification time of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime TimeLastModified { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_UniqueId.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.UniqueId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L56" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_UniqueId_" data-uid="PnP.Core.Model.SharePoint.IFolder.UniqueId*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_UniqueId" data-uid="PnP.Core.Model.SharePoint.IFolder.UniqueId"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_UniqueId" class="expander" data-toggle="collapse">UniqueId</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_UniqueId" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the Unique Id of the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid UniqueId { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Guid</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_WelcomePage.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.WelcomePage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L61" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_WelcomePage_" data-uid="PnP.Core.Model.SharePoint.IFolder.WelcomePage*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_WelcomePage" data-uid="PnP.Core.Model.SharePoint.IFolder.WelcomePage"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_WelcomePage" class="expander" data-toggle="collapse">WelcomePage</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_WelcomePage" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value that specifies folder-relative URL for the list folder welcome page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string WelcomePage { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_AddFolder_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.AddFolder(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L106" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_AddFolder_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolder*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_AddFolder_System_String_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolder(System.String)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolder_System_String_" class="expander" data-toggle="collapse">AddFolder(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolder_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add a folder to the current folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFolder AddFolder(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the folder to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>
+        <p><p>The added folder.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_AddFolderAsync_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.AddFolderAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L99" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_AddFolderAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_AddFolderAsync_System_String_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderAsync(System.String)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderAsync_System_String_" class="expander" data-toggle="collapse">AddFolderAsync(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderAsync_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add a folder to the current folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFolder&gt; AddFolderAsync(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the folder to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>&gt;
+        <p><p>The added folder.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_PnP_Core_Services_Batch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.AddFolderBatch(PnP.Core.Services.Batch%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L136" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_PnP_Core_Services_Batch_System_String_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatch(PnP.Core.Services.Batch,System.String)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_PnP_Core_Services_Batch_System_String_" class="expander" data-toggle="collapse">AddFolderBatch(Batch, String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_PnP_Core_Services_Batch_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add a folder to the current folder via batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFolder AddFolderBatch(Batch batch, string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>Batch to add the reques to</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the folder to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>
+        <p><p>The added folder.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.AddFolderBatch(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L120" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_System_String_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatch(System.String)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_System_String_" class="expander" data-toggle="collapse">AddFolderBatch(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatch_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add a folder to the current folder via batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFolder AddFolderBatch(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the folder to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>
+        <p><p>The added folder.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_PnP_Core_Services_Batch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.AddFolderBatchAsync(PnP.Core.Services.Batch%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L128" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_PnP_Core_Services_Batch_System_String_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatchAsync(PnP.Core.Services.Batch,System.String)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_PnP_Core_Services_Batch_System_String_" class="expander" data-toggle="collapse">AddFolderBatchAsync(Batch, String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_PnP_Core_Services_Batch_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add a folder to the current folder via batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFolder&gt; AddFolderBatchAsync(Batch batch, string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>Batch to add the reques to</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the folder to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>&gt;
+        <p><p>The added folder.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.AddFolderBatchAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L113" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_System_String_" data-uid="PnP.Core.Model.SharePoint.IFolder.AddFolderBatchAsync(System.String)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_System_String_" class="expander" data-toggle="collapse">AddFolderBatchAsync(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_AddFolderBatchAsync_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add a folder to the current folder via batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFolder&gt; AddFolderBatchAsync(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the folder to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.SharePoint.IFolder.html">IFolder</a>&gt;
+        <p><p>The added folder.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_CopyTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.CopyTo(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L152" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_CopyTo_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyTo*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_CopyTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyTo(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_CopyTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">CopyTo(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_CopyTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CopyTo(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the copy operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_CopyToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.CopyToAsync(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L145" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_CopyToAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_CopyToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToAsync(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">CopyToAsync(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CopyToAsync(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the copy operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_CopyToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.CopyToBatch(PnP.Core.Services.Batch%2CSystem.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L182" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_CopyToBatch_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_CopyToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatch(PnP.Core.Services.Batch,System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">CopyToBatch(Batch, String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CopyToBatch(Batch batch, string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>The batch instance to use.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the copy operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_CopyToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.CopyToBatch(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L166" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_CopyToBatch_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_CopyToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatch(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">CopyToBatch(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CopyToBatch(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the copy operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.CopyToBatchAsync(PnP.Core.Services.Batch%2CSystem.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L174" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatchAsync(PnP.Core.Services.Batch,System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">CopyToBatchAsync(Batch, String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CopyToBatchAsync(Batch batch, string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>The batch instance to use.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the copy operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.CopyToBatchAsync(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L159" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.CopyToBatchAsync(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">CopyToBatchAsync(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_CopyToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CopyToBatchAsync(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the copy operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_MoveTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.MoveTo(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L198" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_MoveTo_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveTo*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_MoveTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveTo(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_MoveTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">MoveTo(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_MoveTo_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveTo(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the move operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_MoveToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.MoveToAsync(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L191" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_MoveToAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_MoveToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToAsync(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">MoveToAsync(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MoveToAsync(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the move operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_MoveToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.MoveToBatch(PnP.Core.Services.Batch%2CSystem.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L228" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_MoveToBatch_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_MoveToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatch(PnP.Core.Services.Batch,System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">MoveToBatch(Batch, String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatch_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveToBatch(Batch batch, string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>The batch instance to use.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the move operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_MoveToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.MoveToBatch(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L212" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_MoveToBatch_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_MoveToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatch(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">MoveToBatch(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveToBatch(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the move operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.MoveToBatchAsync(PnP.Core.Services.Batch%2CSystem.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L220" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatchAsync(PnP.Core.Services.Batch,System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">MoveToBatchAsync(Batch, String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_PnP_Core_Services_Batch_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MoveToBatchAsync(Batch batch, string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>The batch instance to use.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the move operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.SharePoint.IFolder.MoveToBatchAsync(System.String%2CPnP.Core.Model.SharePoint.MoveCopyOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/SharePoint/Core/Public/IFolder.cs/#L205" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" data-uid="PnP.Core.Model.SharePoint.IFolder.MoveToBatchAsync(System.String,PnP.Core.Model.SharePoint.MoveCopyOptions)"><a href="#collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="expander" data-toggle="collapse">MoveToBatchAsync(String, MoveCopyOptions)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_SharePoint_IFolder_MoveToBatchAsync_System_String_PnP_Core_Model_SharePoint_MoveCopyOptions_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves a folder to the destination URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MoveToBatchAsync(string destinationUrl, MoveCopyOptions options = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">destinationUrl</span>
+        <p><p>The destination URL.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Model.SharePoint.MoveCopyOptions.html">MoveCopyOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>options of the move operation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_EnsurePropertiesAsync__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object_____">DataModelExtensions.EnsurePropertiesAsync&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_ArePropertiesAvailable__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object_____">DataModelExtensions.ArePropertiesAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1_PnP_Core_Model_IDataModel___0__Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(IDataModel&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
+            
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+</html>

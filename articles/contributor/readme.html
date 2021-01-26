@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -8,19 +8,19 @@
     <title>The PnP Core SDK model | PnP Core SDK </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="The PnP Core SDK model | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -35,19 +35,19 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -77,7 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="the-pnp-core-sdk-model">The PnP Core SDK model</h1>
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/docs/articles/contributor/readme.md/#L1" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                    <h1 id="the-pnp-core-sdk-model">The PnP Core SDK model</h1>
 
 <p>The model in PnP Core SDK is what the SDK users use to interact with Microsoft 365: it defines the model classes (e.g. List), their fields (Title, Description,...) and their operations (e.g. Get). This model has a public part (interfaces) and an implementation (internal, partial classes). In order to translate the model into respective SharePoint REST and/or Microsoft Graph v1.0 or beta queries the model needs to be decorated with attributes. These attributes drive the needed API calls to Microsoft 365 and the serialization of returned responses (JSON) into the model. <strong>As a contributor, extending and enriching the model is how you provide functionality to the developers that will be using this SDK</strong>.</p>
 <p><img src="../../images/sdk%20overview.png" alt="SDK overview"></p>
@@ -86,6 +89,7 @@
 <ul>
 <li>The code of the PnP Core SDK in the <code>src\sdk</code> folder</li>
 <li>Examples of how to use the PnP Core SDK in the <code>src\samples</code> folder</li>
+<li>Generated code to speed up contribution of new model logic in the <code>src\generated</code> folder</li>
 <li>The source of the documentation you are reading right now in the <code>docs</code> folder</li>
 </ul>
 <h2 id="general-model-principles">General model principles</h2>
@@ -107,7 +111,7 @@
 /// Public interface to define a List object of SharePoint Online
 /// &lt;/summary&gt;
 [ConcreteType(typeof(List))]
-public interface IList : IDataModel&lt;IList&gt;, IDataModelUpdate, IDataModelDelete
+public interface IList : IDataModel&lt;IList&gt;, IDataModelUpdate, IDataModelDelete, IQueryableDataModel
 {
     /// &lt;summary&gt;
     /// The Unique ID of the List object
@@ -135,6 +139,7 @@ public interface IList : IDataModel&lt;IList&gt;, IDataModelUpdate, IDataModelDe
 <li>Always implements the <code>IDataModel&lt;TModel&gt;</code> interface where <code>TModel</code> is the actual interface (e.g. <code>IList</code> in above sample)</li>
 <li>Optionally implements the <code>IDataModelUpdate</code> interface whenever <strong>update</strong> functionality in needed on this model class</li>
 <li>Optionally implements the <code>IDataModelDelete</code> interface whenever <strong>delete</strong> functionality is needed on this model class</li>
+<li>Optionally implements the <code>IQueryableDataModel</code> interface whenerver the model supports LINQ querying. This goes hand in hand with using the <code>QueryableDataModelCollection</code> base class for the model's collection class</li>
 </ul>
 <p>The properties in the model use either basic .Net data types, enumerations, other model/collection types or so called complex types:</p>
 <pre><code class="lang-csharp">// Simple .Net type
@@ -227,8 +232,8 @@ internal partial class List
 <li><p>Can implement event handlers which are used to (see the <a href="event%20handlers.html">Event Handlers</a> page for more details):</p>
 <ul>
 <li>Optionally customize the JSON to Model mapping via the <code>MappingHandler = (FromJson input)</code> handler</li>
-<li>Implement the API call for doing an Add operation via the <code>AddApiCallHandler = ()</code> handler</li>
-<li>Optionally implement API call overrides that allow you to update the generated API call before it's send off to the server. There are these handlers: <code>GetApiCallOverrideHandler = (ApiCall apiCall)</code>, <code>UpdateApiCallOverrideHandler = (ApiCall apiCall)</code> and <code>DeleteApiCallOverrideHandler = (ApiCall apiCall)</code></li>
+<li>Implement the API call for doing an Add operation via the <code>AddApiCallHandler = async ()</code> handler</li>
+<li>Optionally implement API call overrides that allow you to update the generated API call before it's send off to the server. There are these handlers: <code>GetApiCallOverrideHandler = async (ApiCall apiCall)</code>, <code>UpdateApiCallOverrideHandler = async (ApiCall apiCall)</code> and <code>DeleteApiCallOverrideHandler = async (ApiCall apiCall)</code></li>
 <li>Optionally implement property validation (prevent property updates, alter values) via the <code>ValidateUpdateHandler = (ref FieldUpdateRequest fieldUpdateRequest)</code> handler</li>
 </ul>
 </li>
@@ -499,10 +504,6 @@ public interface IListCollection : IDataModelCollection&lt;IList&gt;, IQueryable
 <p>When you populate your model via SharePoint REST queries then continue <a href="extending%20the%20model%20-%20SharePoint%20REST.html">here</a>, in case the model is populated via Microsoft Graph continue <a href="extending%20the%20model%20-%20Microsoft%20Graph.html">here</a>.</p>
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/pnp/pnpcore/blob/dev/docs/articles/contributor/readme.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -518,15 +519,14 @@ public interface IListCollection : IDataModelCollection&lt;IList&gt;, IQueryable
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../../styles/main.js"></script>  </body>
 </html>

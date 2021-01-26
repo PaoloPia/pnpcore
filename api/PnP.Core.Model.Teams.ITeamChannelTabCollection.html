@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface ITeamChannelTabCollection
    | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,19 +37,19 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection">
-  <h1 id="PnP_Core_Model_Teams_ITeamChannelTabCollection" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection">Interface ITeamChannelTabCollection
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L10" title="View Source" class="view-source-lg"><i class="fa fa-code"></i></a>
+                      <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                      <h1 id="PnP_Core_Model_Teams_ITeamChannelTabCollection" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection">Interface ITeamChannelTabCollection
   </h1>
   <div class="markdown level0 summary"><p>Public interface to define a collection of Tabs for a Team Channel</p>
 </div>
@@ -89,9 +93,6 @@
   
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator#System_Collections_Generic_IEnumerable_1_GetEnumerator">IEnumerable&lt;ITeamChannelTab&gt;.GetEnumerator()</a>
-    </div>
     <div>
       <a class="xref" href="PnP.Core.Model.IDataModelParent.html#PnP_Core_Model_IDataModelParent_Parent">IDataModelParent.Parent</a>
     </div>
@@ -111,7 +112,7 @@
       <a class="xref" href="PnP.Core.Model.ISupportPaging-1.html#PnP_Core_Model_ISupportPaging_1_CanPage">ISupportPaging&lt;ITeamChannelTab&gt;.CanPage</a>
     </div>
     <div>
-      <a class="xref" href="PnP.Core.Model.ISupportPaging-1.html#PnP_Core_Model_ISupportPaging_1_GetPagedAsync_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object_____">ISupportPaging&lt;ITeamChannelTab&gt;.GetPagedAsync(Int32, Expression&lt;Func&lt;ITeamChannelTab, Object&gt;&gt;[])</a>
+      <a class="xref" href="PnP.Core.Model.ISupportPaging-1.html#PnP_Core_Model_ISupportPaging_1_GetPagedAsync_System_Int32_Expression_Func__0_System_Object_____">ISupportPaging&lt;ITeamChannelTab&gt;.GetPagedAsync(Int32, Expression&lt;Func&lt;ITeamChannelTab, Object&gt;&gt;[])</a>
     </div>
     <div>
       <a class="xref" href="PnP.Core.Model.ISupportPaging-1.html#PnP_Core_Model_ISupportPaging_1_GetNextPageAsync">ISupportPaging&lt;ITeamChannelTab&gt;.GetNextPageAsync()</a>
@@ -126,7 +127,7 @@
   
   <h5 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ITeamChannelTabCollection : IDataModelCollection&lt;ITeamChannelTab&gt;, IEnumerable&lt;ITeamChannelTab&gt;, IEnumerable, IDataModelParent, IDataModelWithContext, IRequestableCollection, ISupportPaging&lt;ITeamChannelTab&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITeamChannelTabCollection : IDataModelCollection&lt;ITeamChannelTab&gt;, IEnumerable&lt;ITeamChannelTab&gt;, IDataModelParent, IDataModelWithContext, IRequestableCollection, ISupportPaging&lt;ITeamChannelTab&gt;</code></pre>
   </div>
 
   
@@ -138,89 +139,17 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_PnP_Core_Services_Batch_System_String_System_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab(PnP.Core.Services.Batch%2CSystem.String%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab(System.String%2CUri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L49" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L70" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab*"></a>
   
-  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_PnP_Core_Services_Batch_System_String_System_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab(PnP.Core.Services.Batch,System.String,System.Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_PnP_Core_Services_Batch_System_String_System_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTab(Batch, String, Uri)</a></h4>
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab(System.String,Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTab(String, Uri)</a></h4>
   
-  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_PnP_Core_Services_Batch_System_String_System_Uri_" class="collapse in">
-  <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITeamChannelTab AddDocumentLibraryTab(Batch batch, string name, Uri documentLibraryUri)</code></pre>
-  </div>
-
-  <h5 class="parameters">Parameters</h5>
-  <table>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
-        <span class="parametername">batch</span>
-        <p><p>Batch to use</p>
-</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
-        <span class="parametername">name</span>
-        <p><p>Display name of the DocumentLibrary channel tab</p>
-</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></span>
-        <span class="parametername">documentLibraryUri</span>
-        <p><p>Uri to the document library that needs to be added as tab</p>
-</p>
-      </td>
-    </tr>
-  </table>
-  
-  <h5 class="returns">Returns</h5>
-  <table>
-    <tr>
-      <td>
-        <a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>
-        <p><p>Newly added DocumentLibrary channel tab</p>
-</p>
-      </td>
-    </tr>
-  </table>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </div>
-  
-  <span class="small pull-right mobile-hide">
-    <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_System_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab(System.String%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L57" title="View Source"><i class="fa fa-code"></i></a>
-  </span>
-  
-  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab*"></a>
-  
-  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_System_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTab(System.String,System.Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_System_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTab(String, Uri)</a></h4>
-  
-  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_System_Uri_" class="collapse in">
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTab_System_String_Uri_" class="collapse in">
   <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -242,7 +171,7 @@
     </tr>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></span>
+        <span class="pull-right"><span class="xref">Uri</span></span>
         <span class="parametername">documentLibraryUri</span>
         <p><p>Uri to the document library that needs to be added as tab</p>
 </p>
@@ -274,17 +203,17 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_System_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabAsync(System.String%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabAsync(System.String%2CUri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L40" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L62" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabAsync*"></a>
   
-  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_System_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabAsync(System.String,System.Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_System_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTabAsync(String, Uri)</a></h4>
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabAsync(System.String,Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTabAsync(String, Uri)</a></h4>
   
-  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_System_Uri_" class="collapse in">
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabAsync_System_String_Uri_" class="collapse in">
   <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -306,7 +235,7 @@
     </tr>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></span>
+        <span class="pull-right"><span class="xref">Uri</span></span>
         <span class="parametername">documentLibraryUri</span>
         <p><p>Uri to the document library that needs to be added as tab</p>
 </p>
@@ -318,7 +247,7 @@
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
         <p><p>Newly added DocumentLibrary channel tab</p>
 </p>
       </td>
@@ -338,24 +267,24 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_PnP_Core_Services_Batch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTab(PnP.Core.Services.Batch%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_PnP_Core_Services_Batch_System_String_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatch(PnP.Core.Services.Batch%2CSystem.String%2CUri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L25" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L88" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
-  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTab*"></a>
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatch*"></a>
   
-  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_PnP_Core_Services_Batch_System_String_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTab(PnP.Core.Services.Batch,System.String)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_PnP_Core_Services_Batch_System_String_" class="expander" data-toggle="collapse">AddWikiTab(Batch, String)</a></h4>
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_PnP_Core_Services_Batch_System_String_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatch(PnP.Core.Services.Batch,System.String,Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_PnP_Core_Services_Batch_System_String_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTabBatch(Batch, String, Uri)</a></h4>
   
-  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_PnP_Core_Services_Batch_System_String_" class="collapse in">
-  <div class="markdown level1 summary"><p>Adds a new wiki channel tab</p>
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_PnP_Core_Services_Batch_System_String_Uri_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITeamChannelTab AddWikiTab(Batch batch, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">ITeamChannelTab AddDocumentLibraryTabBatch(Batch batch, string name, Uri documentLibraryUri)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -372,7 +301,15 @@
       <td>
         <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
         <span class="parametername">name</span>
-        <p><p>Display name of the wiki channel tab</p>
+        <p><p>Display name of the DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Uri</span></span>
+        <span class="parametername">documentLibraryUri</span>
+        <p><p>Uri to the document library that needs to be added as tab</p>
 </p>
       </td>
     </tr>
@@ -383,7 +320,7 @@
     <tr>
       <td>
         <a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>
-        <p><p>Newly added wiki channel tab</p>
+        <p><p>Newly added DocumentLibrary channel tab</p>
 </p>
       </td>
     </tr>
@@ -402,10 +339,210 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTab(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_System_String_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatch(System.String%2CUri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L104" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_System_String_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatch(System.String,Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_System_String_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTabBatch(String, Uri)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatch_System_String_Uri_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITeamChannelTab AddDocumentLibraryTabBatch(string name, Uri documentLibraryUri)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Uri</span></span>
+        <span class="parametername">documentLibraryUri</span>
+        <p><p>Uri to the document library that needs to be added as tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>
+        <p><p>Newly added DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_PnP_Core_Services_Batch_System_String_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatchAsync(PnP.Core.Services.Batch%2CSystem.String%2CUri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L79" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_PnP_Core_Services_Batch_System_String_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatchAsync(PnP.Core.Services.Batch,System.String,Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_PnP_Core_Services_Batch_System_String_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTabBatchAsync(Batch, String, Uri)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_PnP_Core_Services_Batch_System_String_Uri_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ITeamChannelTab&gt; AddDocumentLibraryTabBatchAsync(Batch batch, string name, Uri documentLibraryUri)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>Batch to use</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Uri</span></span>
+        <span class="parametername">documentLibraryUri</span>
+        <p><p>Uri to the document library that needs to be added as tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
+        <p><p>Newly added DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_System_String_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatchAsync(System.String%2CUri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L96" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_System_String_Uri_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddDocumentLibraryTabBatchAsync(System.String,Uri)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_System_String_Uri_" class="expander" data-toggle="collapse">AddDocumentLibraryTabBatchAsync(String, Uri)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddDocumentLibraryTabBatchAsync_System_String_Uri_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new DocumentLibrary channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ITeamChannelTab&gt; AddDocumentLibraryTabBatchAsync(string name, Uri documentLibraryUri)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Uri</span></span>
+        <span class="parametername">documentLibraryUri</span>
+        <p><p>Uri to the document library that needs to be added as tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
+        <p><p>Newly added DocumentLibrary channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTab(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L24" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTab_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTab*"></a>
@@ -458,10 +595,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabAsync_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabAsync_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabAsync_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabAsync*"></a>
@@ -494,7 +631,247 @@
   <table>
     <tr>
       <td>
-        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
+        <p><p>Newly added wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_PnP_Core_Services_Batch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatch(PnP.Core.Services.Batch%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L40" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_PnP_Core_Services_Batch_System_String_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatch(PnP.Core.Services.Batch,System.String)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_PnP_Core_Services_Batch_System_String_" class="expander" data-toggle="collapse">AddWikiTabBatch(Batch, String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_PnP_Core_Services_Batch_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new wiki channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITeamChannelTab AddWikiTabBatch(Batch batch, string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>Batch to use</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>
+        <p><p>Newly added wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatch(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L54" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatch*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_System_String_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatch(System.String)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_System_String_" class="expander" data-toggle="collapse">AddWikiTabBatch(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatch_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new wiki channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITeamChannelTab AddWikiTabBatch(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>
+        <p><p>Newly added wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_PnP_Core_Services_Batch_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatchAsync(PnP.Core.Services.Batch%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_PnP_Core_Services_Batch_System_String_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatchAsync(PnP.Core.Services.Batch,System.String)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_PnP_Core_Services_Batch_System_String_" class="expander" data-toggle="collapse">AddWikiTabBatchAsync(Batch, String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_PnP_Core_Services_Batch_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new wiki channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ITeamChannelTab&gt; AddWikiTabBatchAsync(Batch batch, string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.Batch.html">Batch</a></span>
+        <span class="parametername">batch</span>
+        <p><p>Batch to use</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
+        <p><p>Newly added wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatchAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatchAsync*"></a>
+  
+  <h4 id="PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_System_String_" data-uid="PnP.Core.Model.Teams.ITeamChannelTabCollection.AddWikiTabBatchAsync(System.String)"><a href="#collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_System_String_" class="expander" data-toggle="collapse">AddWikiTabBatchAsync(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Model_Teams_ITeamChannelTabCollection_AddWikiTabBatchAsync_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new wiki channel tab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ITeamChannelTab&gt; AddWikiTabBatchAsync(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>Display name of the wiki channel tab</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Model.Teams.ITeamChannelTab.html">ITeamChannelTab</a>&gt;
         <p><p>Newly added wiki channel tab</p>
 </p>
       </td>
@@ -514,16 +891,14 @@
   
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_LoadProperties__1_PnP_Core_Model_IDataModelCollection___0__Expression_Func___0_System_Object_____">DataModelExtensions.LoadProperties&lt;TModel&gt;(IDataModelCollection&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;[])</a>
   </div>
   
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Model_Teams_ITeamChannelTabCollection.md&amp;value=---%0Auid%3A%20PnP.Core.Model.Teams.ITeamChannelTabCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-              <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Model/Teams/Public/ITeamChannelTabCollection.cs/#L10" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -539,15 +914,14 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
 </html>

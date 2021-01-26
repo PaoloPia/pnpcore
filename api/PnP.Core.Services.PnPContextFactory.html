@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
-<html>
+<html lang="en">
   
   <head>
     <meta charset="utf-8">
@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PnPContextFactory
    | PnP Core SDK ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    
-    <link rel="shortcut icon" href="../https://c.s-microsoft.com/favicon.ico?v2">
+    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="description" content="The PnP Core SDK is an SDK designed to work against Microsoft 365. Its aim is to provide a unified object model to work with the whole Microsoft 365 ecosystem. ">
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,19 +37,19 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
+                  <label class="glyphicon glyphicon-search" for="search-query"></label>
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="PnP.Core.Services.PnPContextFactory">
-  <h1 id="PnP_Core_Services_PnPContextFactory" data-uid="PnP.Core.Services.PnPContextFactory">Class PnPContextFactory
+                  <div class="contribution-panel mobile-hide pull-right">
+                      <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L15" title="View Source" class="view-source-lg"><i class="fa fa-code"></i></a>
+                      <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                  </div>
+                      <h1 id="PnP_Core_Services_PnPContextFactory" data-uid="PnP.Core.Services.PnPContextFactory">Class PnPContextFactory
   </h1>
   <div class="markdown level0 summary"><p>Public factory service to create PnPContext object instances</p>
 </div>
@@ -92,37 +96,13 @@
   </div>
   
   
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   
   <h6><strong>Namespace</strong>: <a class="xref" href="PnP.Core.Services.html">PnP.Core.Services</a></h6>
   <h6><strong>Assembly</strong>: PnP.Core.dll</h6>
   
   <h5 id="PnP_Core_Services_PnPContextFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PnPContextFactory : IPnPContextFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public class PnPContextFactory : object, IPnPContextFactory</code></pre>
   </div>
 
   
@@ -134,74 +114,74 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory__ctor_IOptionsMonitor_PnP_Core_Services_PnPContextFactoryOptions__ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_IAuthenticationProviderFactory_PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_PnP_Core_Services_ISettings_TelemetryClient_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.%23ctor(IOptionsMonitor%7BPnP.Core.Services.PnPContextFactoryOptions%7D%2CILogger%7BPnP.Core.Services.PnPContext%7D%2CPnP.Core.Services.IAuthenticationProviderFactory%2CPnP.Core.Services.SharePointRestClient%2CPnP.Core.Services.MicrosoftGraphClient%2CPnP.Core.Services.ISettings%2CTelemetryClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory__ctor_ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_IOptions_PnP_Core_Services_PnPContextFactoryOptions__IOptions_PnP_Core_Services_PnPGlobalSettingsOptions__TelemetryClient_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.%23ctor(ILogger%7BPnP.Core.Services.PnPContext%7D%2CPnP.Core.Services.SharePointRestClient%2CPnP.Core.Services.MicrosoftGraphClient%2CIOptions%7BPnP.Core.Services.PnPContextFactoryOptions%7D%2CIOptions%7BPnP.Core.Services.PnPGlobalSettingsOptions%7D%2CTelemetryClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L15" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L26" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory__ctor_" data-uid="PnP.Core.Services.PnPContextFactory.#ctor*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory__ctor_IOptionsMonitor_PnP_Core_Services_PnPContextFactoryOptions__ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_IAuthenticationProviderFactory_PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_PnP_Core_Services_ISettings_TelemetryClient_" data-uid="PnP.Core.Services.PnPContextFactory.#ctor(IOptionsMonitor{PnP.Core.Services.PnPContextFactoryOptions},ILogger{PnP.Core.Services.PnPContext},PnP.Core.Services.IAuthenticationProviderFactory,PnP.Core.Services.SharePointRestClient,PnP.Core.Services.MicrosoftGraphClient,PnP.Core.Services.ISettings,TelemetryClient)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory__ctor_IOptionsMonitor_PnP_Core_Services_PnPContextFactoryOptions__ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_IAuthenticationProviderFactory_PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_PnP_Core_Services_ISettings_TelemetryClient_" class="expander" data-toggle="collapse">PnPContextFactory(IOptionsMonitor&lt;PnPContextFactoryOptions&gt;, ILogger&lt;PnPContext&gt;, IAuthenticationProviderFactory, SharePointRestClient, MicrosoftGraphClient, ISettings, TelemetryClient)</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory__ctor_ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_IOptions_PnP_Core_Services_PnPContextFactoryOptions__IOptions_PnP_Core_Services_PnPGlobalSettingsOptions__TelemetryClient_" data-uid="PnP.Core.Services.PnPContextFactory.#ctor(ILogger{PnP.Core.Services.PnPContext},PnP.Core.Services.SharePointRestClient,PnP.Core.Services.MicrosoftGraphClient,IOptions{PnP.Core.Services.PnPContextFactoryOptions},IOptions{PnP.Core.Services.PnPGlobalSettingsOptions},TelemetryClient)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory__ctor_ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_IOptions_PnP_Core_Services_PnPContextFactoryOptions__IOptions_PnP_Core_Services_PnPGlobalSettingsOptions__TelemetryClient_" class="expander" data-toggle="collapse">PnPContextFactory(ILogger&lt;PnPContext&gt;, SharePointRestClient, MicrosoftGraphClient, IOptions&lt;PnPContextFactoryOptions&gt;, IOptions&lt;PnPGlobalSettingsOptions&gt;, TelemetryClient)</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory__ctor_IOptionsMonitor_PnP_Core_Services_PnPContextFactoryOptions__ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_IAuthenticationProviderFactory_PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_PnP_Core_Services_ISettings_TelemetryClient_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory__ctor_ILogger_PnP_Core_Services_PnPContext__PnP_Core_Services_SharePointRestClient_PnP_Core_Services_MicrosoftGraphClient_IOptions_PnP_Core_Services_PnPContextFactoryOptions__IOptions_PnP_Core_Services_PnPGlobalSettingsOptions__TelemetryClient_" class="collapse in">
+  <div class="markdown level1 summary"><p>Default constructor for <a class="xref" href="PnP.Core.Services.PnPContextFactory.html">PnPContextFactory</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PnPContextFactory(IOptionsMonitor&lt;PnPContextFactoryOptions&gt; options, ILogger&lt;PnPContext&gt; logger, IAuthenticationProviderFactory authenticationProviderFactory, SharePointRestClient sharePointRestClient, MicrosoftGraphClient microsoftGraphClient, ISettings settingsClient, TelemetryClient telemetryClient)</code></pre>
+    <pre><code class="lang-csharp hljs">public PnPContextFactory(ILogger&lt;PnPContext&gt; logger, SharePointRestClient sharePointRestClient, MicrosoftGraphClient microsoftGraphClient, IOptions&lt;PnPContextFactoryOptions&gt; contextOptions, IOptions&lt;PnPGlobalSettingsOptions&gt; globalOptions, TelemetryClient telemetryClient)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
       <td>
-        <span class="pull-right"><span class="xref">IOptionsMonitor</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContextFactoryOptions.html">PnPContextFactoryOptions</a>&gt;</span>
-        <span class="parametername">options</span>
-        <p>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <span class="pull-right"><span class="xref">ILogger</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>&gt;</span>
         <span class="parametername">logger</span>
-        <p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="PnP.Core.Services.IAuthenticationProviderFactory.html">IAuthenticationProviderFactory</a></span>
-        <span class="parametername">authenticationProviderFactory</span>
-        <p>
+        <p><p>Connected logger</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="PnP.Core.Services.SharePointRestClient.html">SharePointRestClient</a></span>
         <span class="parametername">sharePointRestClient</span>
-        <p>
+        <p><p>SharePoint REST http client to use</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="PnP.Core.Services.MicrosoftGraphClient.html">MicrosoftGraphClient</a></span>
         <span class="parametername">microsoftGraphClient</span>
-        <p>
+        <p><p>Microsoft Graph http client to use</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="PnP.Core.Services.ISettings.html">ISettings</a></span>
-        <span class="parametername">settingsClient</span>
-        <p>
+        <span class="pull-right"><span class="xref">IOptions</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContextFactoryOptions.html">PnPContextFactoryOptions</a>&gt;</span>
+        <span class="parametername">contextOptions</span>
+        <p><p><a class="xref" href="PnP.Core.Services.PnPContextFactory.html">PnPContextFactory</a> options</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IOptions</span>&lt;<a class="xref" href="PnP.Core.Services.PnPGlobalSettingsOptions.html">PnPGlobalSettingsOptions</a>&gt;</span>
+        <span class="parametername">globalOptions</span>
+        <p><p>Global options to use</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><span class="xref">TelemetryClient</span></span>
         <span class="parametername">telemetryClient</span>
-        <p>
+        <p><p>Connected Azure AppInsights telemetry client</p>
+</p>
       </td>
     </tr>
   </table>
@@ -222,23 +202,24 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_AuthenticationProviderFactory.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.AuthenticationProviderFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_ContextOptions.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.ContextOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L48" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L73" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
-  <a id="PnP_Core_Services_PnPContextFactory_AuthenticationProviderFactory_" data-uid="PnP.Core.Services.PnPContextFactory.AuthenticationProviderFactory*"></a>
+  <a id="PnP_Core_Services_PnPContextFactory_ContextOptions_" data-uid="PnP.Core.Services.PnPContextFactory.ContextOptions*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory_AuthenticationProviderFactory" data-uid="PnP.Core.Services.PnPContextFactory.AuthenticationProviderFactory"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_AuthenticationProviderFactory" class="expander" data-toggle="collapse">AuthenticationProviderFactory</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory_ContextOptions" data-uid="PnP.Core.Services.PnPContextFactory.ContextOptions"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_ContextOptions" class="expander" data-toggle="collapse">ContextOptions</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_AuthenticationProviderFactory" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_ContextOptions" class="collapse in">
+  <div class="markdown level1 summary"><p>Options used to configure this <a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IAuthenticationProviderFactory AuthenticationProviderFactory { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected PnPContextFactoryOptions ContextOptions { get; }</code></pre>
   </div>
 
   
@@ -249,7 +230,7 @@
   <table>
     <tr>
       <td>
-        <a class="xref" href="PnP.Core.Services.IAuthenticationProviderFactory.html">IAuthenticationProviderFactory</a>
+        <a class="xref" href="PnP.Core.Services.PnPContextFactoryOptions.html">PnPContextFactoryOptions</a>
         <p>
       </td>
     </tr>
@@ -265,10 +246,54 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Log.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_GlobalOptions.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.GlobalOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L49" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L78" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Services_PnPContextFactory_GlobalOptions_" data-uid="PnP.Core.Services.PnPContextFactory.GlobalOptions*"></a>
+  
+  <h4 id="PnP_Core_Services_PnPContextFactory_GlobalOptions" data-uid="PnP.Core.Services.PnPContextFactory.GlobalOptions"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_GlobalOptions" class="expander" data-toggle="collapse">GlobalOptions</a></h4>
+  
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_GlobalOptions" class="collapse in">
+  <div class="markdown level1 summary"><p>Options used to configure this <a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PnPGlobalSettingsOptions GlobalOptions { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="PnP.Core.Services.PnPGlobalSettingsOptions.html">PnPGlobalSettingsOptions</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Log.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L53" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_Log_" data-uid="PnP.Core.Services.PnPContextFactory.Log*"></a>
@@ -276,7 +301,8 @@
   <h4 id="PnP_Core_Services_PnPContextFactory_Log" data-uid="PnP.Core.Services.PnPContextFactory.Log"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Log" class="expander" data-toggle="collapse">Log</a></h4>
   
   <div id="collapsible-PnP_Core_Services_PnPContextFactory_Log" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Connected logger</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -308,10 +334,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_MicrosoftGraphClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.MicrosoftGraphClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_MicrosoftGraphClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.MicrosoftGraphClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L51" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L63" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_MicrosoftGraphClient_" data-uid="PnP.Core.Services.PnPContextFactory.MicrosoftGraphClient*"></a>
@@ -319,7 +345,8 @@
   <h4 id="PnP_Core_Services_PnPContextFactory_MicrosoftGraphClient" data-uid="PnP.Core.Services.PnPContextFactory.MicrosoftGraphClient"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_MicrosoftGraphClient" class="expander" data-toggle="collapse">MicrosoftGraphClient</a></h4>
   
   <div id="collapsible-PnP_Core_Services_PnPContextFactory_MicrosoftGraphClient" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Connected Microsoft Graph http client</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -351,96 +378,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Options.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_SharePointRestClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.SharePointRestClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
-  </span>
-  
-  <a id="PnP_Core_Services_PnPContextFactory_Options_" data-uid="PnP.Core.Services.PnPContextFactory.Options*"></a>
-  
-  <h4 id="PnP_Core_Services_PnPContextFactory_Options" data-uid="PnP.Core.Services.PnPContextFactory.Options"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Options" class="expander" data-toggle="collapse">Options</a></h4>
-  
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Options" class="collapse in">
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected PnPContextFactoryOptions Options { get; }</code></pre>
-  </div>
-
-  
-  
-  
-  
-  <h5 class="propertyValue">Property Value</h5>
-  <table>
-    <tr>
-      <td>
-        <a class="xref" href="PnP.Core.Services.PnPContextFactoryOptions.html">PnPContextFactoryOptions</a>
-        <p>
-      </td>
-    </tr>
-  </table>
-  
-  
-  
-  
-  
-  
-  
-  </div>
-  
-  <span class="small pull-right mobile-hide">
-    <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_SettingsClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.SettingsClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L53" title="View Source"><i class="fa fa-code"></i></a>
-  </span>
-  
-  <a id="PnP_Core_Services_PnPContextFactory_SettingsClient_" data-uid="PnP.Core.Services.PnPContextFactory.SettingsClient*"></a>
-  
-  <h4 id="PnP_Core_Services_PnPContextFactory_SettingsClient" data-uid="PnP.Core.Services.PnPContextFactory.SettingsClient"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_SettingsClient" class="expander" data-toggle="collapse">SettingsClient</a></h4>
-  
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_SettingsClient" class="collapse in">
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ISettings SettingsClient { get; }</code></pre>
-  </div>
-
-  
-  
-  
-  
-  <h5 class="propertyValue">Property Value</h5>
-  <table>
-    <tr>
-      <td>
-        <a class="xref" href="PnP.Core.Services.ISettings.html">ISettings</a>
-        <p>
-      </td>
-    </tr>
-  </table>
-  
-  
-  
-  
-  
-  
-  
-  </div>
-  
-  <span class="small pull-right mobile-hide">
-    <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_SharePointRestClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.SharePointRestClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L50" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L58" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_SharePointRestClient_" data-uid="PnP.Core.Services.PnPContextFactory.SharePointRestClient*"></a>
@@ -448,7 +389,8 @@
   <h4 id="PnP_Core_Services_PnPContextFactory_SharePointRestClient" data-uid="PnP.Core.Services.PnPContextFactory.SharePointRestClient"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_SharePointRestClient" class="expander" data-toggle="collapse">SharePointRestClient</a></h4>
   
   <div id="collapsible-PnP_Core_Services_PnPContextFactory_SharePointRestClient" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Connected SharePoint REST http client</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -480,10 +422,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_TelemetryClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.TelemetryClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_TelemetryClient.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.TelemetryClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L52" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L68" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_TelemetryClient_" data-uid="PnP.Core.Services.PnPContextFactory.TelemetryClient*"></a>
@@ -491,7 +433,8 @@
   <h4 id="PnP_Core_Services_PnPContextFactory_TelemetryClient" data-uid="PnP.Core.Services.PnPContextFactory.TelemetryClient"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_TelemetryClient" class="expander" data-toggle="collapse">TelemetryClient</a></h4>
   
   <div id="collapsible-PnP_Core_Services_PnPContextFactory_TelemetryClient" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Connected Azure AppInsights telemetry client</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -525,17 +468,17 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_Guid_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_Guid_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L177" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L198" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory_Create_System_Guid_" data-uid="PnP.Core.Services.PnPContextFactory.Create(System.Guid)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Guid_" class="expander" data-toggle="collapse">Create(Guid)</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory_Create_Guid_" data-uid="PnP.Core.Services.PnPContextFactory.Create(Guid)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_Guid_" class="expander" data-toggle="collapse">Create(Guid)</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Guid_" class="collapse in">
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_Guid_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new instance of PnPContext based on a provided group and using the default Authentication Provider</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -549,7 +492,7 @@
   <table>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></span>
+        <span class="pull-right"><span class="xref">Guid</span></span>
         <span class="parametername">groupId</span>
         <p><p>The id of an Microsoft 365 group</p>
 </p>
@@ -574,7 +517,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_System_Guid_">IPnPContextFactory.Create(Guid)</a></div>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_Guid_">IPnPContextFactory.Create(Guid)</a></div>
   
   
   
@@ -583,17 +526,17 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_Guid_PnP_Core_Services_IAuthenticationProvider_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.Guid%2CPnP.Core.Services.IAuthenticationProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_Guid_PnP_Core_Services_IAuthenticationProvider_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(Guid%2CPnP.Core.Services.IAuthenticationProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L160" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L170" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory_Create_System_Guid_PnP_Core_Services_IAuthenticationProvider_" data-uid="PnP.Core.Services.PnPContextFactory.Create(System.Guid,PnP.Core.Services.IAuthenticationProvider)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Guid_PnP_Core_Services_IAuthenticationProvider_" class="expander" data-toggle="collapse">Create(Guid, IAuthenticationProvider)</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory_Create_Guid_PnP_Core_Services_IAuthenticationProvider_" data-uid="PnP.Core.Services.PnPContextFactory.Create(Guid,PnP.Core.Services.IAuthenticationProvider)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_Guid_PnP_Core_Services_IAuthenticationProvider_" class="expander" data-toggle="collapse">Create(Guid, IAuthenticationProvider)</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Guid_PnP_Core_Services_IAuthenticationProvider_" class="collapse in">
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_Guid_PnP_Core_Services_IAuthenticationProvider_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new instance of PnPContext based on a provided group and Authentication Provider instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -607,7 +550,7 @@
   <table>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></span>
+        <span class="pull-right"><span class="xref">Guid</span></span>
         <span class="parametername">groupId</span>
         <p><p>The id of an Microsoft 365 group</p>
 </p>
@@ -640,7 +583,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_System_Guid_PnP_Core_Services_IAuthenticationProvider_">IPnPContextFactory.Create(Guid, IAuthenticationProvider)</a></div>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_Guid_PnP_Core_Services_IAuthenticationProvider_">IPnPContextFactory.Create(Guid, IAuthenticationProvider)</a></div>
   
   
   
@@ -649,76 +592,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_Guid_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.Guid%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L135" title="View Source"><i class="fa fa-code"></i></a>
-  </span>
-  
-  <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
-  
-  <h4 id="PnP_Core_Services_PnPContextFactory_Create_System_Guid_System_String_" data-uid="PnP.Core.Services.PnPContextFactory.Create(System.Guid,System.String)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Guid_System_String_" class="expander" data-toggle="collapse">Create(Guid, String)</a></h4>
-  
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Guid_System_String_" class="collapse in">
-  <div class="markdown level1 summary"><p>Creates a new instance of PnPContext based on a provided group and Authentication configuration name</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual PnPContext Create(Guid groupId, string authenticationProviderName)</code></pre>
-  </div>
-
-  <h5 class="parameters">Parameters</h5>
-  <table>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></span>
-        <span class="parametername">groupId</span>
-        <p><p>The id of an Microsoft 365 group</p>
-</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
-        <span class="parametername">authenticationProviderName</span>
-        <p><p>The name of the Authentication Provider to use to authenticate within the PnPContext</p>
-</p>
-      </td>
-    </tr>
-  </table>
-  
-  <h5 class="returns">Returns</h5>
-  <table>
-    <tr>
-      <td>
-        <a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>
-        <p><p>A PnPContext object based on the provided configuration name</p>
-</p>
-      </td>
-    </tr>
-  </table>
-  
-  
-  
-  
-  
-  
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_System_Guid_System_String_">IPnPContextFactory.Create(Guid, String)</a></div>
-  
-  
-  
-  
-  </div>
-  
-  <span class="small pull-right mobile-hide">
-    <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L60" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L85" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
@@ -773,17 +650,17 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L78" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L113" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory_Create_System_Uri_" data-uid="PnP.Core.Services.PnPContextFactory.Create(System.Uri)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Uri_" class="expander" data-toggle="collapse">Create(Uri)</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory_Create_Uri_" data-uid="PnP.Core.Services.PnPContextFactory.Create(Uri)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_Uri_" class="expander" data-toggle="collapse">Create(Uri)</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Uri_" class="collapse in">
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_Uri_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new instance of SPOContext based on a provided configuration name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -797,7 +674,7 @@
   <table>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></span>
+        <span class="pull-right"><span class="xref">Uri</span></span>
         <span class="parametername">url</span>
         <p><p>The URL of the SPOContext as a URI</p>
 </p>
@@ -822,7 +699,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_System_Uri_">IPnPContextFactory.Create(Uri)</a></div>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_Uri_">IPnPContextFactory.Create(Uri)</a></div>
   
   
   
@@ -831,17 +708,17 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_Uri_PnP_Core_Services_IAuthenticationProvider_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.Uri%2CPnP.Core.Services.IAuthenticationProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_Uri_PnP_Core_Services_IAuthenticationProvider_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(Uri%2CPnP.Core.Services.IAuthenticationProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L116" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L135" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory_Create_System_Uri_PnP_Core_Services_IAuthenticationProvider_" data-uid="PnP.Core.Services.PnPContextFactory.Create(System.Uri,PnP.Core.Services.IAuthenticationProvider)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Uri_PnP_Core_Services_IAuthenticationProvider_" class="expander" data-toggle="collapse">Create(Uri, IAuthenticationProvider)</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory_Create_Uri_PnP_Core_Services_IAuthenticationProvider_" data-uid="PnP.Core.Services.PnPContextFactory.Create(Uri,PnP.Core.Services.IAuthenticationProvider)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_Uri_PnP_Core_Services_IAuthenticationProvider_" class="expander" data-toggle="collapse">Create(Uri, IAuthenticationProvider)</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Uri_PnP_Core_Services_IAuthenticationProvider_" class="collapse in">
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_Uri_PnP_Core_Services_IAuthenticationProvider_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new instance of SPOContext based on a provided configuration name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -855,7 +732,7 @@
   <table>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></span>
+        <span class="pull-right"><span class="xref">Uri</span></span>
         <span class="parametername">url</span>
         <p><p>The URL of the SPOContext as a URI</p>
 </p>
@@ -888,7 +765,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_System_Uri_PnP_Core_Services_IAuthenticationProvider_">IPnPContextFactory.Create(Uri, IAuthenticationProvider)</a></div>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_Uri_PnP_Core_Services_IAuthenticationProvider_">IPnPContextFactory.Create(Uri, IAuthenticationProvider)</a></div>
   
   
   
@@ -897,41 +774,33 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_Create_System_Uri_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.Create(System.Uri%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.CreateAsync(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L90" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L208" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
-  <a id="PnP_Core_Services_PnPContextFactory_Create_" data-uid="PnP.Core.Services.PnPContextFactory.Create*"></a>
+  <a id="PnP_Core_Services_PnPContextFactory_CreateAsync_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync*"></a>
   
-  <h4 id="PnP_Core_Services_PnPContextFactory_Create_System_Uri_System_String_" data-uid="PnP.Core.Services.PnPContextFactory.Create(System.Uri,System.String)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Uri_System_String_" class="expander" data-toggle="collapse">Create(Uri, String)</a></h4>
+  <h4 id="PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync(Guid)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_" class="expander" data-toggle="collapse">CreateAsync(Guid)</a></h4>
   
-  <div id="collapsible-PnP_Core_Services_PnPContextFactory_Create_System_Uri_System_String_" class="collapse in">
-  <div class="markdown level1 summary"><p>Creates a new instance of SPOContext based on a provided configuration name</p>
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new instance of PnPContext based on a provided group and using the default Authentication Provider</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual PnPContext Create(Uri url, string authenticationProviderName)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;PnPContext&gt; CreateAsync(Guid groupId)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
       <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></span>
-        <span class="parametername">url</span>
-        <p><p>The URL of the SPOContext as a URI</p>
-</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
-        <span class="parametername">authenticationProviderName</span>
-        <p><p>The name of the Authentication Provider to use to authenticate within the SPOContext</p>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">groupId</span>
+        <p><p>The id of an Microsoft 365 group</p>
 </p>
       </td>
     </tr>
@@ -941,7 +810,131 @@
   <table>
     <tr>
       <td>
-        <a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>&gt;
+        <p><p>A PnPContext object based on the provided configuration name</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_CreateAsync_Guid_">IPnPContextFactory.CreateAsync(Guid)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_PnP_Core_Services_IAuthenticationProvider_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.CreateAsync(Guid%2CPnP.Core.Services.IAuthenticationProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L181" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Services_PnPContextFactory_CreateAsync_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync*"></a>
+  
+  <h4 id="PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_PnP_Core_Services_IAuthenticationProvider_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync(Guid,PnP.Core.Services.IAuthenticationProvider)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_PnP_Core_Services_IAuthenticationProvider_" class="expander" data-toggle="collapse">CreateAsync(Guid, IAuthenticationProvider)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Guid_PnP_Core_Services_IAuthenticationProvider_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new instance of PnPContext based on a provided group and Authentication Provider instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;PnPContext&gt; CreateAsync(Guid groupId, IAuthenticationProvider authenticationProvider)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">groupId</span>
+        <p><p>The id of an Microsoft 365 group</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.IAuthenticationProvider.html">IAuthenticationProvider</a></span>
+        <span class="parametername">authenticationProvider</span>
+        <p><p>The Authentication Provider to use to authenticate within the PnPContext</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>&gt;
+        <p><p>A PnPContext object based on the provided configuration name</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_CreateAsync_Guid_PnP_Core_Services_IAuthenticationProvider_">IPnPContextFactory.CreateAsync(Guid, IAuthenticationProvider)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_CreateAsync_System_String_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.CreateAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L95" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Services_PnPContextFactory_CreateAsync_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync*"></a>
+  
+  <h4 id="PnP_Core_Services_PnPContextFactory_CreateAsync_System_String_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync(System.String)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_System_String_" class="expander" data-toggle="collapse">CreateAsync(String)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new instance of SPOContext based on a provided configuration name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;PnPContext&gt; CreateAsync(string name)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the SPOContext configuration to use</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>&gt;
         <p><p>A SPOContext object based on the provided configuration name</p>
 </p>
       </td>
@@ -954,7 +947,131 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_Create_System_Uri_System_String_">IPnPContextFactory.Create(Uri, String)</a></div>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_CreateAsync_System_String_">IPnPContextFactory.CreateAsync(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.CreateAsync(Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L123" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Services_PnPContextFactory_CreateAsync_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync*"></a>
+  
+  <h4 id="PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync(Uri)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_" class="expander" data-toggle="collapse">CreateAsync(Uri)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new instance of SPOContext based on a provided configuration name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;PnPContext&gt; CreateAsync(Uri url)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Uri</span></span>
+        <span class="parametername">url</span>
+        <p><p>The URL of the SPOContext as a URI</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>&gt;
+        <p><p>A SPOContext object based on the provided configuration name</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_CreateAsync_Uri_">IPnPContextFactory.CreateAsync(Uri)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/PaoloPia/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_PnP_Core_Services_IAuthenticationProvider_.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory.CreateAsync(Uri%2CPnP.Core.Services.IAuthenticationProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PaoloPia/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L146" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="PnP_Core_Services_PnPContextFactory_CreateAsync_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync*"></a>
+  
+  <h4 id="PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_PnP_Core_Services_IAuthenticationProvider_" data-uid="PnP.Core.Services.PnPContextFactory.CreateAsync(Uri,PnP.Core.Services.IAuthenticationProvider)"><a href="#collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_PnP_Core_Services_IAuthenticationProvider_" class="expander" data-toggle="collapse">CreateAsync(Uri, IAuthenticationProvider)</a></h4>
+  
+  <div id="collapsible-PnP_Core_Services_PnPContextFactory_CreateAsync_Uri_PnP_Core_Services_IAuthenticationProvider_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new instance of SPOContext based on a provided configuration name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;PnPContext&gt; CreateAsync(Uri url, IAuthenticationProvider authenticationProvider)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Uri</span></span>
+        <span class="parametername">url</span>
+        <p><p>The URL of the SPOContext as a URI</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="PnP.Core.Services.IAuthenticationProvider.html">IAuthenticationProvider</a></span>
+        <span class="parametername">authenticationProvider</span>
+        <p><p>The Authentication Provider to use to authenticate within the SPOContext</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Task</span>&lt;<a class="xref" href="PnP.Core.Services.PnPContext.html">PnPContext</a>&gt;
+        <p><p>A SPOContext object based on the provided configuration name</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="PnP.Core.Services.IPnPContextFactory.html#PnP_Core_Services_IPnPContextFactory_CreateAsync_Uri_PnP_Core_Services_IAuthenticationProvider_">IPnPContextFactory.CreateAsync(Uri, IAuthenticationProvider)</a></div>
   
   
   
@@ -963,16 +1080,11 @@
   
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
+      <a class="xref" href="PnP.Core.Model.DataModelExtensions.html#PnP_Core_Model_DataModelExtensions_IsPropertyAvailable__1___0_Expression_Func___0_System_Object___">DataModelExtensions.IsPropertyAvailable&lt;TModel&gt;(TModel, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</a>
   </div>
   
 </article>
           </div>
-          <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/pnp/pnpcore/new/dev/apiSpec/new?filename=PnP_Core_Services_PnPContextFactory.md&amp;value=---%0Auid%3A%20PnP.Core.Services.PnPContextFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-              <a href="https://github.com/pnp/pnpcore/blob/dev/src/sdk/PnP.Core/Services/Core/PnPContextFactory.cs/#L13" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
-          </div>
-          
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -988,15 +1100,14 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            PnP Core SDK
+            <span>PnP Core SDK<br>Generated by <strong><a href='https://dotnet.github.io/docfx' alt='Doc FX Website'>DocFX</a></strong> with <strong><a href='https://ovasquez.github.io/docfx-material' alt='DocFx Material Theme'>Material UI</a></strong></span>
             
+            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>  </body>
 </html>
